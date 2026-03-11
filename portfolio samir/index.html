@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===  PRIMARY SEO  === -->
+  <title>Samir · Coding Crabs — Premium Web Design & Development</title>
+  <meta name="description" content="Samir is a premium web designer and developer at Coding Crabs, crafting high-converting websites with stunning animations, bespoke UI, and technical SEO for brands and startups worldwide.">
+  <meta name="keywords" content="web designer, web developer, Coding Crabs, Samir, frontend development, GSAP animations, SEO, UI design, responsive websites, India">
+  <meta name="author" content="Samir — Coding Crabs">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://codingcrabs.dev/">
+
+  <!-- ===  OPEN GRAPH  === -->
+  <meta property="og:type"         content="website">
+  <meta property="og:url"          content="https://codingcrabs.dev/">
+  <meta property="og:title"        content="Samir · Coding Crabs — Premium Web Design & Development">
+  <meta property="og:description"  content="High-converting websites with stunning animations and bespoke UI — built for ambitious brands and startups.">
+  <meta property="og:image"        content="https://codingcrabs.dev/assets/og-cover.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name"    content="Coding Crabs">
+  <meta property="og:locale"       content="en_IN">
+
+  <!-- ===  TWITTER / X  === -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@codingcrabs">
+  <meta name="twitter:title"       content="Samir · Coding Crabs — Premium Web Design & Development">
+  <meta name="twitter:description" content="High-converting websites with stunning animations and bespoke UI.">
+  <meta name="twitter:image"       content="https://codingcrabs.dev/assets/og-cover.jpg">
+
+  <!-- ===  THEME / PWA  === -->
+  <meta name="theme-color" content="#08080a">
+  <meta name="color-scheme" content="dark">
+
+  <!-- ===  FONTS  === -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap">
+
+  <!-- ===  STYLES  === -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ===  STRUCTURED DATA  === -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Coding Crabs",
+    "description":"Premium web design and development studio",
+    "url":"https://codingcrabs.dev",
+    "founder":{"@type":"Person","name":"Samir"},
+    "serviceType":["Web Design","Web Development","SEO"],
+    "areaServed":"Worldwide"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__logo">CC</span>
+      <div class="preloader__bar"><div class="preloader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="site-cursor" aria-hidden="true"></div>
+  <div class="site-cursor site-cursor--dot" aria-hidden="true"></div>
+
+  <!-- MAIN WRAPPER -->
+  <div id="main">
+
+    <!-- NAV -->
+    <header class="navbar" role="banner">
+      <a href="#hero" class="nav-brand" aria-label="Coding Crabs home">
+        <span class="nav-brand__emoji">🦀</span>
+        <span class="nav-brand__name">Coding<em>Crabs</em></span>
+      </a>
+
+      <nav class="menu" aria-label="Site navigation">
+        <div class="menu-line">
+          <a href="#page2"  class="nav-link top-1">Services</a>
+          <a href="#page2"  class="nav-link">Services</a>
+        </div>
+        <div class="menu-line">
+          <a href="#page3"  class="nav-link top-1">Works</a>
+          <a href="#page3"  class="nav-link">Works</a>
+        </div>
+        <div class="menu-line">
+          <a href="#silky-skills" class="nav-link top-1">Skills</a>
+          <a href="#silky-skills" class="nav-link">Skills</a>
+        </div>
+        <div class="menu-line">
+          <a href="#contact" class="nav-link top-1">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <div class="nav-right">
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <!-- Moon icon — shown in dark mode -->
+          <svg class="theme-icon theme-icon--moon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <!-- Sun icon — shown in light mode -->
+          <svg class="theme-icon theme-icon--sun" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="12" y1="1"  x2="12" y2="3"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="1"  y1="12" x2="3"  y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="nav-cta" aria-label="Book a call">
+          Book a Call
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO (#page kept for GSAP selectors) -->
+    <section id="page" aria-labelledby="hero-title">
+
+      <div class="hero__meta">
+        <span class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Available for projects
+        </span>
+        <span class="hero__year">© 2025</span>
+      </div>
+
+      <div class="top">
+        <h1 class="heroHeading" id="hero-title">
+          <!-- Liquid SVG (lighting-color fixed, flood colors updated to gold) -->
+          <svg width="586" height="121" viewBox="-43 14 586 121" preserveAspectRatio="xMidYMid" aria-label="Coding Crabs">
+            <defs>
+              <filter id="editing-liquid" x="-25%" y="-25%" width="150%" height="160%">
+                <feFlood flood-color="#c8a24a" result="flood-1"/>
+                <feFlood flood-color="rgba(100%,90%,60%,0.34)" result="flood-2"/>
+                <feFlood flood-color="#e4c97a" result="flood-3"/>
+                <feTurbulence baseFrequency="0.01" type="fractalNoise" numOctaves="1" seed="35" result="bs-1"/>
+                <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="bs-2"/>
+                <feDisplacementMap in="bs-2" in2="bs-1" scale="420" result="bs-3"/>
+                <feComposite in="flood-1" in2="bs-3" operator="in" result="bs-4"/>
+                <feTurbulence baseFrequency="0.02" type="fractalNoise" numOctaves="2" seed="36" result="ms-1"/>
+                <feGaussianBlur in="SourceAlpha" stdDeviation="0.1" result="ms-2"/>
+                <feDisplacementMap in="ms-2" in2="ms-1" scale="35" result="ms-3"/>
+                <feComposite in="flood-3" in2="ms-3" operator="in" result="ms-4"/>
+                <feTurbulence baseFrequency="0.05" type="fractalNoise" numOctaves="1" seed="37" result="ts-1"/>
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="ts-2"/>
+                <feDisplacementMap in="ts-2" in2="ts-1" scale="220" result="ts-3"/>
+                <feComposite in="flood-2" in2="ts-3" operator="in" result="ts-4"/>
+                <feMerge result="le-1">
+                  <feMergeNode in="bs-4"/>
+                  <feMergeNode in="ms-4"/>
+                  <feMergeNode in="ts-4"/>
+                </feMerge>
+                <feColorMatrix in="le-1" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="le-2"/>
+                <feGaussianBlur in="le-2" stdDeviation="2" result="le-3"/>
+                <feSpecularLighting in="le-3" surfaceScale="5" specularConstant=".75" specularExponent="30" lighting-color="white" result="le-4">
+                  <fePointLight x="-50" y="-100" z="400"/>
+                </feSpecularLighting>
+                <feComposite in="le-4" in2="le-2" operator="in" result="le-5"/>
+                <feComposite in="le-1" in2="le-5" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="le-6"/>
+              </filter>
+            </defs>
+            <g filter="url(#editing-liquid)">
+              <g transform="translate(41 104)">
+                <path d="M34.50-13.25L34.50-13.25L34.50-13.25Q36.16-12.03 36.16-9.44L36.16-9.44L36.16-9.44Q36.16-6.85 35.04-5.02L35.04-5.02L35.04-5.02Q33.92-3.20 31.74-1.79L31.74-1.79L31.74-1.79Q27.07 1.22 18.91 1.22L18.91 1.22L18.91 1.22Q10.75 1.22 6.30-3.04L6.30-3.04L6.30-3.04Q1.86-7.30 1.86-14.85L1.86-14.85L1.86-14.85Q1.86-25.54 7.42-33.66L7.42-33.66L7.42-33.66Q11.65-39.68 19.20-42.24L19.20-42.24L19.20-42.24Q23.10-43.52 26.94-43.52L26.94-43.52L26.94-43.52Q30.78-43.52 33.15-43.01L33.15-43.01L33.15-43.01Q35.52-42.50 37.31-41.47L37.31-41.47L37.31-41.47Q41.22-39.23 41.22-35.65L41.22-35.65L41.22-35.65Q41.22-32.38 38.14-29.95L38.14-29.95L38.14-29.95Q35.33-27.78 33.02-27.78L33.02-27.78L33.02-27.78Q30.72-27.78 29.76-28.10L29.76-28.10L29.76-28.10Q30.02-30.40 30.02-31.90L30.02-31.90L30.02-31.90Q30.02-33.41 29.95-34.50L29.95-34.50L29.95-34.50Q29.89-35.58 29.57-36.61L29.57-36.61L29.57-36.61Q28.93-38.98 26.98-38.98L26.98-38.98L26.98-38.98Q25.02-38.98 23.07-37.15L23.07-37.15L23.07-37.15Q21.12-35.33 19.46-32.26L19.46-32.26L19.46-32.26Q15.68-25.28 15.68-17.02L15.68-17.02L15.68-17.02Q15.68-13.06 17.92-10.78L17.92-10.78L17.92-10.78Q20.16-8.51 24.96-8.51L24.96-8.51L24.96-8.51Q28.54-8.51 31.94-10.88L31.94-10.88L31.94-10.88Q33.41-11.90 34.50-13.25ZM55.42 1.28L55.42 1.28L55.42 1.28Q41.34 1.28 41.34-11.97L41.34-11.97L41.34-11.97Q41.34-21.38 46.53-27.46L46.53-27.46L46.53-27.46Q52.03-33.92 61.57-33.92L61.57-33.92L61.57-33.92Q68.48-33.92 72-30.72L72-30.72L72-30.72Q75.52-27.52 75.52-20.80L75.52-20.80L75.52-20.80Q75.52-10.56 70.02-4.61L70.02-4.61L70.02-4.61Q64.64 1.28 55.42 1.28ZM57.09-26.56L57.09-26.56L57.09-26.56Q56.32-24.83 55.71-22.24L55.71-22.24L55.71-22.24Q55.10-19.65 54.34-15.55L54.34-15.55L54.34-15.55Q53.57-11.46 53.57-6.40L53.57-6.40L53.57-6.40Q53.57-4.74 54.11-3.65L54.11-3.65L54.11-3.65Q54.66-2.56 56.13-2.56L56.13-2.56L56.13-2.56Q57.60-2.56 58.53-3.26L58.53-3.26L58.53-3.26Q59.46-3.97 60.16-5.63L60.16-5.63L60.16-5.63Q61.44-8.58 62.46-14.05L62.46-14.05L62.46-14.05Q63.49-19.52 63.58-21.89L63.58-21.89L63.58-21.89Q63.68-24.26 63.68-26.02L63.68-26.02L63.68-26.02Q63.68-27.78 63.17-28.93L63.17-28.93L63.17-28.93Q62.66-30.08 61.22-30.08L61.22-30.08L61.22-30.08Q59.78-30.08 58.82-29.18L58.82-29.18L58.82-29.18Q57.86-28.29 57.09-26.56ZM99.46-33.92L99.46-33.92L99.46-33.92Q101.76-33.92 103.55-33.41L103.55-33.41L103.55-33.41Q103.62-33.66 103.74-34.37L103.74-34.37L104.06-36.35L104.06-36.35Q104.32-37.63 104.70-39.74L104.70-39.74L105.73-44.80L118.46-46.08L111.36-8.96L111.36-8.96Q111.30-8.58 111.30-7.94L111.30-7.94L111.30-6.91L111.30-6.91Q111.30-5.50 112-4.45L112-4.45L112-4.45Q112.70-3.39 113.86-3.39L113.86-3.39L113.86-3.39Q112.58-0.38 108.67 0.90L108.67 0.90L108.67 0.90Q107.33 1.28 105.44 1.28L105.44 1.28L105.44 1.28Q103.55 1.28 101.82 0.29L101.82 0.29L101.82 0.29Q100.10-0.70 99.58-2.37L99.58-2.37L99.58-2.37Q98.56-0.70 96.51 0.29L96.51 0.29L96.51 0.29Q94.46 1.28 91.49 1.28L91.49 1.28L91.49 1.28Q88.51 1.28 86.05 0.51L86.05 0.51L86.05 0.51Q83.58-0.26 82.05-1.92L82.05-1.92L82.05-1.92Q79.23-5.18 79.23-12.61L79.23-12.61L79.23-12.61Q79.23-22.21 84.86-28.03L84.86-28.03L84.86-28.03Q90.50-33.92 99.46-33.92ZM99.01-30.08L99.01-30.08L99.01-30.08Q96.64-30.08 95.36-27.52L95.36-27.52L95.36-27.52Q94.08-24.96 92.77-18.62L92.77-18.62L92.77-18.62Q91.46-12.29 91.46-6.59L91.46-6.59L91.46-6.59Q91.46-2.69 93.76-2.69L93.76-2.69L93.76-2.69Q95.81-2.69 97.25-4.74L97.25-4.74L97.25-4.74Q98.69-6.78 99.26-10.18L99.26-10.18L102.72-28.93L102.72-28.93Q101.38-30.08 99.01-30.08ZM134.66-3.52L134.66-3.52L134.66-3.52Q132.67 1.28 126.34 1.28L126.34 1.28L126.34 1.28Q123.07 1.28 121.02-0.96L121.02-0.96L121.02-0.96Q119.30-2.94 119.30-4.93L119.30-4.93L119.30-4.93Q119.30-10.11 121.66-20.22L121.66-20.22L124.03-32.64L137.02-33.92L133.12-13.70L133.12-13.70Q132.03-8.96 132.03-7.30L132.03-7.30L132.03-7.30Q132.03-3.65 134.66-3.52ZM125.18-41.54L125.18-41.54L125.18-41.54Q125.18-44.03 127.26-45.38L127.26-45.38L127.26-45.38Q129.34-46.72 132.35-46.72L132.35-46.72L132.35-46.72Q135.36-46.72 137.18-45.38L137.18-45.38L137.18-45.38Q139.01-44.03 139.01-41.54L139.01-41.54L139.01-41.54Q139.01-39.04 136.99-37.76L136.99-37.76L136.99-37.76Q134.98-36.48 131.97-36.48L131.97-36.48L131.97-36.48Q128.96-36.48 127.07-37.76L127.07-37.76L127.07-37.76Q125.18-39.04 125.18-41.54ZM167.17 1.28L167.17 1.28L167.17 1.28Q159.42 1.28 159.42-4.74L159.42-4.74L159.42-4.74Q159.49-6.40 160-9.22L160-9.22L161.15-15.10L161.15-15.10Q162.88-23.42 162.88-25.28L162.88-25.28L162.88-25.28Q162.88-28.99 160.70-28.99L160.70-28.99L160.70-28.99Q157.06-28.99 155.14-19.46L155.14-19.46L151.36 0L138.50 1.28L145.15-32.70L155.65-33.92L154.62-27.65L154.62-27.65Q157.63-33.92 166.85-33.92L166.85-33.92L166.85-33.92Q171.33-33.92 173.22-32.03L173.22-32.03L173.22-32.03Q175.10-30.14 175.10-25.92L175.10-25.92L175.10-25.92Q175.10-21.95 173.06-12.67L173.06-12.67L173.06-12.67Q172.10-8.51 172.10-6.94L172.10-6.94L172.10-6.94Q172.10-5.38 172.96-4.48L172.96-4.48L172.96-4.48Q173.82-3.58 175.10-3.46L175.10-3.46L175.10-3.46Q174.46-1.28 172.26 0L172.26 0L172.26 0Q170.05 1.28 167.17 1.28ZM184.77-26.75L184.77-26.75L184.77-26.75Q186.94-29.82 190.24-31.87L190.24-31.87L190.24-31.87Q193.54-33.92 197.57-33.92L197.57-33.92L197.57-33.92Q201.60-33.92 203.52-32.64L203.52-32.64L216.06-33.92L211.71-9.34L211.71-9.34Q209.47 3.20 204.74 8.13L204.74 8.13L204.74 8.13Q200.19 12.80 191.36 12.80L191.36 12.80L191.36 12.80Q184.64 12.80 180.80 10.69L180.80 10.69L180.80 10.69Q176.96 8.58 176.96 5.06L176.96 5.06L176.96 5.06Q176.96 2.43 178.94 0.93L178.94 0.93L178.94 0.93Q180.93-0.58 184.00-0.58L184.00-0.58L184.00-0.58Q186.69-0.58 188.74 0.64L188.74 0.64L188.74 0.64Q189.95 1.28 190.53 2.18L190.53 2.18L190.53 2.18Q189.06 3.46 189.06 5.57L189.06 5.57L189.06 5.57Q189.06 8.32 191.62 8.32L191.62 8.32L191.62 8.32Q195.90 8.32 198.34-1.79L198.34-1.79L198.34-1.79Q199.04-4.54 199.62-7.30L199.62-7.30L199.62-7.30Q196.74-3.78 190.21-3.78L190.21-3.78L190.21-3.78Q185.66-3.78 183.04-5.95L183.04-5.95L183.04-5.95Q180.42-8.13 180.42-13.25L180.42-13.25L180.42-13.25Q180.42-16.45 181.50-20.06L181.50-20.06L181.50-20.06Q182.59-23.68 184.77-26.75ZM193.09-13.06L193.09-13.06L193.09-13.06Q193.09-8.70 195.33-8.70L195.33-8.70L195.33-8.70Q196.86-8.70 198.34-10.37L198.34-10.37L198.34-10.37Q199.49-11.71 199.94-13.70L199.94-13.70L203.20-30.14L203.20-30.14Q202.88-30.21 202.56-30.34L202.56-30.34L202.56-30.34Q201.92-30.59 201.09-30.59L201.09-30.59L201.09-30.59Q197.18-30.59 194.88-24.19L194.88-24.19L194.88-24.19Q193.09-19.20 193.09-13.06ZM265.15-13.25L265.15-13.25L265.15-13.25Q266.82-12.03 266.82-9.44L266.82-9.44L266.82-9.44Q266.82-6.85 265.70-5.02L265.70-5.02L265.70-5.02Q264.58-3.20 262.40-1.79L262.40-1.79L262.40-1.79Q257.73 1.22 249.57 1.22L249.57 1.22L249.57 1.22Q241.41 1.22 236.96-3.04L236.96-3.04L236.96-3.04Q232.51-7.30 232.51-14.85L232.51-14.85L232.51-14.85Q232.51-25.54 238.08-33.66L238.08-33.66L238.08-33.66Q242.30-39.68 249.86-42.24L249.86-42.24L249.86-42.24Q253.76-43.52 257.60-43.52L257.60-43.52L257.60-43.52Q261.44-43.52 263.81-43.01L263.81-43.01L263.81-43.01Q266.18-42.50 267.97-41.47L267.97-41.47L267.97-41.47Q271.87-39.23 271.87-35.65L271.87-35.65L271.87-35.65Q271.87-32.38 268.80-29.95L268.80-29.95L268.80-29.95Q265.98-27.78 263.68-27.78L263.68-27.78L263.68-27.78Q261.38-27.78 260.42-28.10L260.42-28.10L260.42-28.10Q260.67-30.40 260.67-31.90L260.67-31.90L260.67-31.90Q260.67-33.41 260.61-34.50L260.61-34.50L260.61-34.50Q260.54-35.58 260.22-36.61L260.22-36.61L260.22-36.61Q259.58-38.98 257.63-38.98L257.63-38.98L257.63-38.98Q255.68-38.98 253.73-37.15L253.73-37.15L253.73-37.15Q251.78-35.33 250.11-32.26L250.11-32.26L250.11-32.26Q246.34-25.28 246.34-17.02L246.34-17.02L246.34-17.02Q246.34-13.06 248.58-10.78L248.58-10.78L248.58-10.78Q250.82-8.51 255.62-8.51L255.62-8.51L255.62-8.51Q259.20-8.51 262.59-10.88L262.59-10.88L262.59-10.88Q264.06-11.90 265.15-13.25ZM292.16-17.98L292.16-17.98L292.16-17.98Q294.46-22.08 294.46-26.24L294.46-26.24L294.46-26.24Q294.46-28.99 292.48-28.99L292.48-28.99L292.48-28.99Q290.94-28.99 289.34-26.37L289.34-26.37L289.34-26.37Q287.68-23.74 287.17-20.35L287.17-20.35L283.84 0L270.59 1.28L277.12-32.64L287.68-33.92L286.53-27.46L286.53-27.46Q289.66-33.92 296.70-33.92L296.70-33.92L296.70-33.92Q300.42-33.92 302.43-32L302.43-32L302.43-32Q304.45-30.08 304.45-26.14L304.45-26.14L304.45-26.14Q304.45-22.21 301.86-19.71L301.86-19.71L301.86-19.71Q299.26-17.22 294.85-17.22L294.85-17.22L294.85-17.22Q292.93-17.22 292.16-17.98ZM308.26-1.92L308.26-1.92L308.26-1.92Q306.75-3.58 306.08-6.21L306.08-6.21L306.08-6.21Q305.41-8.83 305.41-13.12L305.41-13.12L305.41-13.12Q305.41-17.41 306.88-21.31L306.88-21.31L306.88-21.31Q308.35-25.22 311.04-28.03L311.04-28.03L311.04-28.03Q316.54-33.92 325.63-33.92L325.63-33.92L325.63-33.92Q328.90-33.92 331.26-32.83L331.26-32.83L342.21-33.92L337.47-8.96L337.47-8.96Q337.28-8.19 337.28-6.78L337.28-6.78L337.28-6.78Q337.28-5.38 338.14-4.48L338.14-4.48L338.14-4.48Q339.01-3.58 340.29-3.46L340.29-3.46L340.29-3.46Q339.65-1.28 337.31 0L337.31 0L337.31 0Q334.98 1.28 332.35 1.28L332.35 1.28L332.35 1.28Q329.73 1.28 327.97 0.29L327.97 0.29L327.97 0.29Q326.21-0.70 325.70-2.37L325.70-2.37L325.70-2.37Q324.67-0.77 322.50 0.26L322.50 0.26L322.50 0.26Q320.32 1.28 317.41 1.28L317.41 1.28L317.41 1.28Q314.50 1.28 312.13 0.51L312.13 0.51L312.13 0.51Q309.76-0.26 308.26-1.92ZM321.76-27.90L321.76-27.90L321.76-27.90Q321.02-26.75 320.38-24.80L320.38-24.80L320.38-24.80Q319.74-22.85 318.69-17.63L318.69-17.63L318.69-17.63Q317.63-12.42 317.63-8.70L317.63-8.70L317.63-8.70Q317.63-4.99 318.21-3.90L318.21-3.90L318.21-3.90Q318.78-2.82 319.81-2.82L319.81-2.82L319.81-2.82Q321.86-2.82 323.36-4.77L323.36-4.77L323.36-4.77Q324.86-6.72 325.44-10.18L325.44-10.18L328.83-28.93L328.83-28.93Q327.49-30.08 325.92-30.08L325.92-30.08L325.92-30.08Q324.35-30.08 323.42-29.57L323.42-29.57L323.42-29.57Q322.50-29.06 321.76-27.90ZM345.02-0.32L345.02-0.32L353.09-42.24L353.09-42.24Q360.64-42.88 365.50-42.88L365.50-42.88L365.50-42.88Q370.37-42.88 373.50-42.46L373.50-42.46L373.50-42.46Q376.64-42.05 378.75-40.96L378.75-40.96L378.75-40.96Q382.98-38.91 382.98-33.28L382.98-33.28L382.98-33.28Q382.98-30.02 380.16-27.26L380.16-27.26L380.16-27.26Q377.54-24.77 374.66-24.19L374.66-24.19L374.66-24.19Q377.73-23.68 379.90-21.38L379.90-21.38L379.90-21.38Q382.21-18.94 382.21-15.17L382.21-15.17L382.21-15.17Q382.21-7.87 376.77-3.62L376.77-3.62L376.77-3.62Q371.33 0.64 360.64 0.64L360.64 0.64L360.64 0.64Q353.28 0.64 345.02-0.32ZM362.43-20.61L359.23-4.03L359.23-4.03Q359.81-3.97 359.94-3.97L359.94-3.97L360.51-3.97L360.51-3.97Q365.76-3.97 368-7.42L368-7.42L368-7.42Q369.66-10.11 369.66-15.04L369.66-15.04L369.66-15.04Q369.66-17.66 367.97-19.07L367.97-19.07L367.97-19.07Q366.27-20.48 362.43-20.61L362.43-20.61ZM372.16-33.22L372.16-33.22L372.16-33.22Q372.16-38.53 367.04-38.53L367.04-38.53L366.46-38.53L366.46-38.53Q366.21-38.53 365.82-38.46L365.82-38.46L363.26-24.96L363.90-24.96L363.90-24.96Q372.16-25.15 372.16-33.22ZM405.57-22.46L405.57-22.46L405.57-22.46Q406.46-24.83 406.46-26.88L406.46-26.88L406.46-26.88Q406.46-30.66 403.39-30.66L403.39-30.66L403.39-30.66Q401.79-30.66 400.48-29.22L400.48-29.22L400.48-29.22Q399.17-27.78 399.17-25.98L399.17-25.98L399.17-25.98Q399.17-24.70 400.19-23.68L400.19-23.68L400.19-23.68Q401.66-22.27 405.44-19.97L405.44-19.97L405.44-19.97Q409.22-17.66 410.66-15.78L410.66-15.78L410.66-15.78Q412.10-13.89 412.10-11.30L412.10-11.30L412.10-11.30Q412.10-8.70 410.85-6.34L410.85-6.34L410.85-6.34Q409.60-3.97 407.36-2.30L407.36-2.30L407.36-2.30Q402.56 1.28 394.88 1.28L394.88 1.28L394.88 1.28Q390.72 1.28 387.52-0.90L387.52-0.90L387.52-0.90Q384.32-3.01 384.32-5.50L384.32-5.50L384.32-5.50Q384.32-8 386.14-9.47L386.14-9.47L386.14-9.47Q387.97-10.94 390.66-10.94L390.66-10.94L390.66-10.94Q393.34-10.94 395.01-9.92L395.01-9.92L395.01-9.92Q394.18-7.81 394.18-6.40L394.18-6.40L394.18-6.40Q394.18-2.18 397.76-2.18L397.76-2.18L397.76-2.18Q399.30-2.18 400.32-3.14L400.32-3.14L400.32-3.14Q401.34-4.10 401.34-5.76L401.34-5.76L401.34-5.76Q401.34-9.02 395.84-12.48L395.84-12.48L395.84-12.48Q391.36-15.42 390.34-16.58L390.34-16.58L390.34-16.58Q388.61-18.62 388.61-21.18L388.61-21.18L388.61-21.18Q388.61-23.74 389.82-26.18L389.82-26.18L389.82-26.18Q391.04-28.61 393.28-30.34L393.28-30.34L393.28-30.34Q397.95-33.92 406.08-33.92L406.08-33.92L406.08-33.92Q410.24-33.92 412.70-32.26L412.70-32.26L412.70-32.26Q415.17-30.59 415.17-27.78L415.17-27.78L415.17-27.78Q415.17-24.96 413.47-23.36L413.47-23.36L413.47-23.36Q411.78-21.76 408.70-21.76L408.70-21.76L408.70-21.76Q406.59-21.76 405.57-22.46Z" fill="#444"></path>
+              </g>
+            </g>
+          </svg>
+        </h1>
+      </div>
+
+      <div class="bottom">
+        <div class="left">
+          <p>I help growing brands and startups gain an unfair advantage through premium, results-driven websites.</p>
+          <a href="#contact" class="leftBtn">
+            Book a Call
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="middle">
+          <model-viewer
+            id="hero-model"
+            class="model-viewer"
+            src="assets/raidriar_the_god_king_-_infinity_blade.glb"
+            alt="Raidriar the God King — 3D character model"
+            autoplay
+            auto-rotate
+            auto-rotate-delay="0"
+            rotation-per-second="20deg"
+            camera-controls
+            touch-action="pan-y"
+            loading="lazy"
+            reveal="auto"
+            shadow-intensity="0.8"
+            shadow-softness="1"
+            exposure="1.15"
+            environment-image="neutral"
+            disable-zoom
+            style="--progress-bar-color: #c8a24a; --progress-bar-height: 2px;"
+          >
+            <!-- Gold spinner shown while GLB streams in -->
+            <div class="model-loader" slot="progress-bar" id="model-loader">
+              <div class="model-loader__ring"></div>
+            </div>
+          </model-viewer>
+        </div>
+
+        <div class="right">
+          <p>Love to create awesome jaw-dropping</p>
+          <h2>Designs</h2>
+        </div>
+      </div>
+    </section>
+    <!-- /HERO -->
+
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Web Design</span><span class="m-sep">✦</span>
+        <span>Development</span><span class="m-sep">✦</span>
+        <span>Animations</span><span class="m-sep">✦</span>
+        <span>SEO</span><span class="m-sep">✦</span>
+        <span>3D &amp; Motion</span><span class="m-sep">✦</span>
+        <span>CMS Integration</span><span class="m-sep">✦</span>
+        <span>Web Design</span><span class="m-sep">✦</span>
+        <span>Development</span><span class="m-sep">✦</span>
+        <span>Animations</span><span class="m-sep">✦</span>
+        <span>SEO</span><span class="m-sep">✦</span>
+        <span>3D &amp; Motion</span><span class="m-sep">✦</span>
+        <span>CMS Integration</span><span class="m-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Projects delivered</span></div>
+      <div class="stat__div"></div>
+      <div class="stat"><span class="stat__num">3+</span><span class="stat__label">Years of experience</span></div>
+      <div class="stat__div"></div>
+      <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Client satisfaction</span></div>
+      <div class="stat__div"></div>
+      <div class="stat"><span class="stat__num">∞</span><span class="stat__label">Passion for craft</span></div>
+    </div>
+
+    <!-- SERVICES (#page2 kept for GSAP) -->
+    <section id="page2" aria-label="Services">
+      <div class="section-header">
+        <h2>
+          <span>How</span><span>I</span><span>can</span>
+          <span>help</span><span>you</span><span>/</span>
+        </h2>
+        <div class="section-header__right">
+          <p class="para">(Services)</p>
+          <p class="serviText2">Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business.</p>
+        </div>
+      </div>
+
+      <div class="services">
+        <div class="one ek">
+          <div class="oneL"><h2>(01)</h2></div>
+          <div class="oneR">
+            <h3>Web Development</h3>
+            <p>A website developed to captivate and convert can elevate your brand to new heights. My custom-coded sites are meticulously crafted to reflect your unique identity with seamless animations.</p>
+            <div class="list">
+              <div class="listItem"><span>01</span>CMS Integration</div>
+              <div class="listItem"><span>02</span>Motion &amp; Animations</div>
+              <div class="listItem bt"><span>03</span>3D Development</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="one do">
+          <div class="oneL"><h2>(02)</h2></div>
+          <div class="oneR">
+            <h3>Web Design</h3>
+            <p>Amplify your online presence with a website that truly connects with your audience's feelings and desires. I design stunning, high-converting sites aligned with your business goals.</p>
+            <div class="list">
+              <div class="listItem"><span>01</span>Responsive Design</div>
+              <div class="listItem"><span>02</span>Wireframing</div>
+              <div class="listItem bt"><span>03</span>UX Writing</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="one tin">
+          <div class="oneL"><h2>(03)</h2></div>
+          <div class="oneR">
+            <h3>SEO</h3>
+            <p>Your website deserves to be seen. I optimize your online presence to elevate visibility in search results, helping your business attract the right audience and stand out.</p>
+            <div class="list">
+              <div class="listItem"><span>01</span>Technical SEO</div>
+              <div class="listItem"><span>02</span>On-Page Optimization</div>
+              <div class="listItem bt"><span>03</span>SEO Audits &amp; Analysis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SERVICES -->
+
+    <!-- WORKS (#page3 kept for GSAP) -->
+    <section id="page3" aria-label="Selected Works">
+      <div>
+        <h2>
+          <span>Selected</span><span>Works</span>
+          <span>/</span><span><sup>(10)</sup></span>
+        </h2>
+      </div>
+      <div class="serviText">
+        <p class="para">(Projects)</p>
+        <div class="serviText2">
+          <p>Featured projects meticulously crafted with passion to drive results and impact.</p>
+        </div>
+      </div>
+
+      <!-- Renaissance desktop scroll — direct child of #page3 so CSS sticky works -->
+      <section id="renaissance-section" aria-label="Web design showcase">
+
+          <div class="flex gap-20 grow-1 pb-80 px-24 h-min" data-master="michelangelo">
+            <div class="grow basis-0">
+              <div class="sticky-pin">
+                <h2 class="pt-20 text-6xl font-semibold">WEB-DESIGNS</h2>
+                <div class="border border-gray-600 rounded-xl mt-8 p-5 text-lg">
+                  <div class="mb-6">
+                    <p class="mb-5">I’m a passionate web developer and UI/UX enthusiast who loves creating clean, modern, and interactive digital experiences. I focus on building responsive websites with smooth animations and intuitive interfaces. My goal is to combine design and technology to deliver meaningful user experiences.</p>
+                  </div>
+                  <img class="object-cover rounded-full w-20 h-20" src="https://images.unsplash.com/photo-1743850765931-4a00e4809a5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJvbnRlbmQlMjBkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3D" alt="Michelangelo" width="60" height="60">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-6 sticky-content grow basis-0 pt-20">
+              <div class="grow-1 flex flex-col gap-6">
+               <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/6.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po6-topaz.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/7.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po7-amber.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/8.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://github.com/justsamir04/crabs-projects/tree/main/port%20po%208" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/9.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po9-ochre.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/10.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po10-rho.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              </div>
+              <div class="grow-1 flex flex-col gap-6">
+      
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-20 grow-1 pb-80 px-24 h-min" data-master="leonardo">
+            <div class="grow basis-0">
+              <div class="sticky-pin">
+                <h2 class="pt-20 text-6xl font-semibold">FRONTEND PROJECTS</h2>
+                <div class="border border-gray-600 rounded-xl mt-8 p-5 text-lg">
+                  <div class="mb-6">
+                    <p class="mb-5">I’m a developer who enjoys turning ideas into visually appealing and functional websites. I specialize in modern web technologies and love experimenting with animations, UI interactions, and creative layouts to build engaging digital products.</p>
+
+                  </div>
+                  <img class="object-cover rounded-full w-20 h-20" src="https://images.unsplash.com/photo-1584447108007-8ba5452bdfb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Leonardo da Vinci" width="60" height="60">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-6 sticky-content grow basis-0 pt-20">
+              <div class="grow-1 flex flex-col gap-6">
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/1.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po1-five.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/2.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po2-alpha.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/3.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po3-gamma.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/4.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po4-psi.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              <div class="vid-wrap"><video class="rounded-xl" autoplay loop muted playsinline preload="none" src="assets/5.mp4" width="100%" height="50%"></video><a class="vid-cta" href="https://po5-two.vercel.app/" target="_blank" rel="noopener">View Live ↗</a></div>
+              </div>
+            
+            </div>
+          </div>
+        </section>
+
+        <!-- Mobile Project Showcase (snap-scroll, mobile only) -->
+        <section id="carousel-section" aria-label="Project showcase">
+
+          <!-- Thin gold progress bar — grows as you scroll through projects -->
+          <div class="proj-progress" aria-hidden="true">
+            <div class="proj-progress__fill" id="proj-progress-fill"></div>
+          </div>
+
+          <!-- Live counter: 01 / 10 -->
+          <div class="proj-counter" id="proj-counter" aria-live="polite">
+            <span class="proj-counter__cur" id="proj-counter-cur">01</span>
+            <span class="proj-counter__sep">/</span>
+            <span class="proj-counter__tot">10</span>
+          </div>
+
+          <!-- Snap-scroll track — one slide per project -->
+          <div class="proj-track" id="proj-track">
+
+            <div class="proj-slide" data-idx="0">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/1.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">01 — Web Design</span>
+                <h3 class="proj-slide__name">Project One</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="1">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/2.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">02 — Development</span>
+                <h3 class="proj-slide__name">Project Two</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="2">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/3.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">03 — UI/UX</span>
+                <h3 class="proj-slide__name">Project Three</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="3">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/4.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">04 — Animation</span>
+                <h3 class="proj-slide__name">Project Four</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="4">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/5.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">05 — E-Commerce</span>
+                <h3 class="proj-slide__name">Project Five</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="5">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/6.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">06 — Branding</span>
+                <h3 class="proj-slide__name">Project Six</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="6">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/7.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">07 — Motion</span>
+                <h3 class="proj-slide__name">Project Seven</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="7">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/8.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">08 — 3D & Webgl</span>
+                <h3 class="proj-slide__name">Project Eight</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="8">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/9.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">09 — SEO</span>
+                <h3 class="proj-slide__name">Project Nine</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+            <div class="proj-slide" data-idx="9">
+              <video class="proj-slide__video" muted autoplay loop playsinline preload="none" src="assets/10.mp4"></video>
+              <div class="proj-slide__glass">
+                <span class="proj-slide__tag">10 — CMS</span>
+                <h3 class="proj-slide__name">Project Ten</h3>
+                <a class="proj-slide__cta" href="#">View Project ↗</a>
+              </div>
+            </div>
+
+          </div><!-- /proj-track -->
+
+          <!-- Dot navigation — right edge -->
+          <nav class="proj-dots" id="proj-dots" aria-label="Jump to project">
+            <button class="proj-dot" data-idx="0" aria-label="Project 1"></button>
+            <button class="proj-dot" data-idx="1" aria-label="Project 2"></button>
+            <button class="proj-dot" data-idx="2" aria-label="Project 3"></button>
+            <button class="proj-dot" data-idx="3" aria-label="Project 4"></button>
+            <button class="proj-dot" data-idx="4" aria-label="Project 5"></button>
+            <button class="proj-dot" data-idx="5" aria-label="Project 6"></button>
+            <button class="proj-dot" data-idx="6" aria-label="Project 7"></button>
+            <button class="proj-dot" data-idx="7" aria-label="Project 8"></button>
+            <button class="proj-dot" data-idx="8" aria-label="Project 9"></button>
+            <button class="proj-dot" data-idx="9" aria-label="Project 10"></button>
+          </nav>
+
+        </section>
+
+    </section>
+    <!-- /WORKS -->
+
+    <!-- SKILLS (#silky-skills kept for GSAP) -->
+    <section id="silky-skills" aria-label="Skills">
+      <div class="text">
+        <span class="section-tag">(Toolkit)</span>
+        <h3>my toolkit</h3>
+        <p class="skills-desc">A curated stack of technologies I use to build fast, beautiful, scalable products.</p>
+        <p class="skills-desc">hover over the grid to see the logos.</p>
+        <!-- Tag pills: visible on mobile, add texture to text panel -->
+        <div class="skills-tags" aria-hidden="true">
+          <span class="skills-tag">React</span>
+          <span class="skills-tag">Node.js</span>
+          <span class="skills-tag">Figma</span>
+          <span class="skills-tag">GSAP</span>
+          <span class="skills-tag">Tailwind</span>
+          <span class="skills-tag">Python</span>
+          <span class="skills-tag">AWS</span>
+          <span class="skills-tag">SQL</span>
+        </div>
+        <!-- Touch hint for the interactive grid below -->
+        <p class="skills-touch-hint">☝ tap &amp; drag the grid below</p>
+      </div>
+      <div class="logos">
+        <section class="media-grid-section" aria-label="Interactive skills grid">
+          <svg class="stage" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <g class="grid"></g>
+            <g class="hero">
+              <image href=""/>
+              <foreignObject width="94" height="94" x="3" y="3" style="display:none"></foreignObject>
+              <g class="close">
+                <rect width="5" height="5" stroke="#c8a24a" fill="#c8a24a" opacity=".6" rx="1"/>
+                <path stroke="#08080a" d="M1,1 L4,4 M4,1 L1,4" stroke-width="0.5" stroke-linecap="round"/>
+              </g>
+            </g>
+          </svg>
+          <svg class="tip" width="100" height="25" fill="#1c1c1e" aria-hidden="true">
+            <rect width="80" height="24" rx="7"/>
+            <text fill="#eeeae2" font-size="13.5" y="15.5" text-anchor="middle"></text>
+            <path d="M0,20 30,20 15,35z"/>
+          </svg>
+        </section>
+      </div>
+    </section>
+    <!-- /SKILLS -->
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" aria-label="Contact">
+
+      <!-- ── Big editorial headline ── -->
+      <div class="ct-hero">
+        <div class="ct-hero__left">
+          <span class="ct-eyebrow">
+            <span class="ct-eyebrow__dot"></span>
+            Available for projects
+          </span>
+          <h2 class="ct-heading">
+            <span class="ct-heading__line">Let's</span>
+            <span class="ct-heading__line ct-heading__line--gold"><em>create</em></span>
+            <span class="ct-heading__line">together</span>
+          </h2>
+          <!-- Info strip — no emoji boxes -->
+          <ul class="ct-info">
+            <li class="ct-info__item">
+              <span class="ct-info__label">Based in</span>
+              <span class="ct-info__value">Mumbai, India</span>
+            </li>
+            <li class="ct-info__item">
+              <span class="ct-info__label">Email</span>
+              <a class="ct-info__value ct-info__link" href="/cdn-cgi/l/email-protection#790a1814100b1c091015104b48391e14181015571a1614"><span class="__cf_email__" data-cfemail="daa9bbb7b3a8bfaab3b6b3e8eb9abdb7bbb3b6f4b9b5b7">[email&#160;protected]</span></a>
+            </li>
+            <li class="ct-info__item">
+              <span class="ct-info__label">Hours</span>
+              <span class="ct-info__value">Mon–Fri · 9:30 – 18:30</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Decorative index number ── -->
+        <div class="ct-hero__right" aria-hidden="true">
+          <span class="ct-deco-num">04</span>
+        </div>
+      </div>
+
+      <!-- ── The form ── -->
+      <div class="ct-form-wrap">
+        <form class="ct-form" name="contact" method="POST" data-netlify="true" id="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+
+          <!-- Row 1: Name + Email -->
+          <div class="ct-row">
+            <div class="ct-field">
+              <input class="ct-input" type="text" name="name" id="ct-name" placeholder=" " required autocomplete="name">
+              <label class="ct-label" for="ct-name">Your Name</label>
+              <span class="ct-line"></span>
+            </div>
+            <div class="ct-field">
+              <input class="ct-input" type="email" name="email" id="ct-email" placeholder=" " required autocomplete="email">
+              <label class="ct-label" for="ct-email">Email Address</label>
+              <span class="ct-line"></span>
+            </div>
+          </div>
+
+          <!-- Row 2: Phone + Subject -->
+          <div class="ct-row">
+            <div class="ct-field">
+              <input class="ct-input" type="tel" name="phone" id="ct-phone" placeholder=" " autocomplete="tel">
+              <label class="ct-label" for="ct-phone">Phone <span class="ct-optional">(optional)</span></label>
+              <span class="ct-line"></span>
+            </div>
+            <div class="ct-field">
+              <input class="ct-input" type="text" name="subject" id="ct-subject" placeholder=" ">
+              <label class="ct-label" for="ct-subject">Subject</label>
+              <span class="ct-line"></span>
+            </div>
+          </div>
+
+          <!-- Row 3: Message -->
+          <div class="ct-field ct-field--full">
+            <textarea class="ct-input ct-textarea" name="message" id="ct-message" placeholder=" " required></textarea>
+            <label class="ct-label" for="ct-message">Tell me about your project</label>
+            <span class="ct-line"></span>
+          </div>
+
+          <!-- Submit -->
+          <div class="ct-form__footer">
+            <button type="submit" class="ct-btn" id="ct-submit" aria-label="Send message">
+              <span class="ct-btn__text">Send Message</span>
+              <span class="ct-btn__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <!-- Loader ring inside button -->
+              <span class="ct-btn__loader" aria-hidden="true"></span>
+            </button>
+            <p class="ct-note">No spam. I reply within 24 hours.</p>
+          </div>
+
+          <!-- Feedback messages -->
+          <p class="ct-success" id="contact-success">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7L5.5 10.5L12 3.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Message sent — I'll be in touch soon.
+          </p>
+          <p class="ct-error" id="contact-error"></p>
+
+        </form>
+      </div>
+
+    </section>
+    <!-- /CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__left">
+        <span class="footer-brand">Coding<em>Crabs</em> 🦀</span>
+        <p>© 2025 Coding Crabs · All rights reserved</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="#page2">Services</a>
+        <a href="#page3">Works</a>
+        <a href="#silky-skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </footer>
+
+  </div><!-- /#main -->
+
+  <!-- SCRIPTS -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- model-viewer: async ES module — never blocks page render -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
